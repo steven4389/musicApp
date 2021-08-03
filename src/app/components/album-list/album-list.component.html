@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-12 col-md-2 col-lg-2">
+        <div *ngFor="let item of music">
+            <div (click)="artist(item)" style="cursor:pointer">
+                {{item.artist}}
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-md-8 col-lg-8">
+        <div>
+            <app-songs></app-songs>
+        </div>
+    </div>
+</div>

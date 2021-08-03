@@ -1,0 +1,7 @@
+<h1>Home</h1>
+<div>Bienvenido {{name}}</div>
+<button class="btn btn-success" (click)="myFavouritesSongs()">Mis Canciones Favoritas</button>
+<hr>
+<div *ngIf="getSongs">
+<app-album-list [musicList]="this.musicList"></app-album-list>
+</div>
